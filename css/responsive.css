@@ -1,0 +1,182 @@
+/* ==========================================================================
+   BOOKLOOP - Responsive Media Queries
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .browse-layout {
+    grid-template-columns: 240px 1fr;
+    gap: 20px;
+  }
+
+  .book-details-grid {
+    grid-template-columns: 320px 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 64px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-card);
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+    display: none;
+    z-index: 99;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px 14px;
+  }
+
+  .nav-auth {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-auth .btn {
+    width: 100%;
+  }
+
+  .hero-section {
+    padding: 40px 0 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .home-search-bar {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 14px;
+  }
+
+  .home-search-bar select {
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+    padding: 10px 0;
+  }
+
+  .steps-grid, .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .browse-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  .book-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-large-image {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .chat-container {
+    grid-template-columns: 1fr;
+    height: 700px;
+  }
+
+  .chat-sidebar {
+    display: block;
+    max-height: 220px;
+  }
+
+  .chat-sidebar.hidden-mobile {
+    display: none;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .steps-grid, .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-wrapper {
+    padding: 24px 20px;
+  }
+}

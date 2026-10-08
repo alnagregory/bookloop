@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581c87" />
+      <stop offset="100%" stop-color="#3b0764" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Book Base Background -->
+  <rect width="400" height="560" rx="12" fill="url(#bgGrad)" />
+  
+  <!-- Book Spine highlight on left -->
+  <rect x="0" y="0" width="24" height="560" rx="4" fill="#ffffff" opacity="0.12" />
+  <line x1="24" y1="0" x2="24" y2="560" stroke="#000000" stroke-width="1.5" opacity="0.25" />
+  
+  <!-- Decorative Header Band -->
+  <rect x="40" y="40" width="320" height="8" rx="4" fill="#c084fc" />
+  <text x="40" y="70" font-family="Segoe UI, -apple-system, Roboto, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#c084fc">BOOKLOOP ACADEMIC</text>
+
+  <!-- Title Area Box -->
+  <rect x="40" y="110" width="320" height="190" rx="8" fill="#ffffff" opacity="0.08" />
+  <foreignObject x="50" y="125" width="300" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', system-ui, sans-serif; color: #ffffff; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: 800; margin: 0 0 10px 0; line-height: 1.25; text-shadow: 0 2px 4px rgba(0,0,0,0.4);">ARTIFICIAL INTELLIGENCE</h2>
+      <p style="font-size: 13px; color: #c084fc; margin: 0; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">A Modern Approach - 4th Ed.</p>
+    </div>
+  </foreignObject>
+
+  <!-- Geometric Abstract Element -->
+  <circle cx="200" cy="360" r="48" fill="#c084fc" opacity="0.15" />
+  <polygon points="200,324 235,376 165,376" fill="#c084fc" opacity="0.4" />
+  <circle cx="200" cy="358" r="8" fill="#ffffff" opacity="0.9" />
+
+  <!-- Author and Bottom Section -->
+  <line x1="40" y1="450" x2="360" y2="450" stroke="#ffffff" stroke-width="1" opacity="0.2" />
+  <text x="40" y="478" font-family="Segoe UI, -apple-system, Roboto, sans-serif" font-size="11" letter-spacing="1.5" text-transform="uppercase" fill="#94a3b8">Author / Reference</text>
+  <text x="40" y="504" font-family="Segoe UI, -apple-system, Roboto, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Russell &amp; Norvig</text>
+  
+  <!-- Verified Badge -->
+  <rect x="280" y="480" width="80" height="26" rx="13" fill="#c084fc" />
+  <text x="320" y="497" font-family="Segoe UI, -apple-system, Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f172a" text-anchor="middle">OFFICIAL</text>
+</svg>
